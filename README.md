@@ -49,7 +49,7 @@ Run the App
 uvicorn app:app --host 127.0.0.1 --port 8000
 ````
 App Health: http://localhost:8000/health
-Metrics: http://localhostt:8000/metrics
+Metrics: http://localhost:8000/metrics
 ------------------------------------------------------------------------------------------------------------------------
 
 Prometheus scrape config
