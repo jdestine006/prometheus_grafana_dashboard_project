@@ -48,16 +48,28 @@ Run the App
 ````
 uvicorn app:app --host 127.0.0.1 --port 8000
 ````
-App Health: http://localhost:8000/health
-Metrics: http://localhost:8000/metrics
+App Health: 
+````
+http://localhost:8000/health
+````
+Metrics: 
+````
+http://localhost:8000/metrics
+````
 ------------------------------------------------------------------------------------------------------------------------
 
 Prometheus scrape config
 
 Edit:
 
-Intel: /usr/local/etc/prometheus.yml
-Apple Silicon: /opt/homebrew/etc/prometheus.yml
+Intel: 
+````
+/usr/local/etc/prometheus.yml
+````
+Apple Silicon: 
+````
+/opt/homebrew/etc/prometheus.yml
+````
 
 Ensure you have:
 ````
@@ -80,7 +92,10 @@ Restart Prometheus:
 brew services restart prometheus
 ````
 
-Verify Targets are UP: http://localhost:9090/targets
+Verify Targets are UP:
+````
+http://localhost:9090/targets
+````
 ------------------------------------------------------------------------------------------------------------------------
 
 Generate test traffic
@@ -92,11 +107,15 @@ for i in {1..800}; do curl -s http://127.0.0.1:8000/work > /dev/null; sleep 0.02
 ------------------------------------------------------------------------------------------------------------------------
 Grafana setup
 
-Login: http://localhost:3000
+Login: 
+````
+http://localhost:3000
+````
 
 Add Prometheus datasource:
-
+````
 URL: http://localhost:9090
+````
 
 ------------------------------------------------------------------------------------------------------------------------
 
