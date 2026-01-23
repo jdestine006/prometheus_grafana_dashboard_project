@@ -31,8 +31,14 @@ brew services start prometheus
 brew services start grafana
 ````
 
-Prometheus UI: http://localhost:9090
-Grafana UI: http://localhost:3000
+Prometheus UI:
+````
+http://localhost:9090
+````
+Grafana UI: 
+````
+http://localhost:3000
+````
 ------------------------------------------------------------------------------------------------------------------------
 
 App Setup
@@ -190,8 +196,9 @@ Include All: ✅
 Custom all value: .*
 
 Use in queries as:
-
+````
 path=~"${path:regex}"
+````
 ------------------------------------------------------------------------------------------------------------------------
 
 Alert (example)
